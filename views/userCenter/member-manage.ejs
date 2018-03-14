@@ -1,0 +1,283 @@
+
+<div class="container">
+	<div class="row website-member-wrap">
+		<div class="col-md-12">
+			<div class="website-info-line">
+					<div class="header-border-left">
+						<h4>会员管理</h4>
+					</div>
+			</div>
+			<table class="table table-hover mt-15 ">
+		      <thead>
+		        <tr>
+		          <td>会员名称</td>
+		          <td>注册时间</td>
+		          <td>手机号是否认证</td>
+		          <td>邮箱是否认证</td>
+		          <td>身份证信息是否认证</td>
+		          <td>会员认证</td>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr>
+		          <td><a href="#" data-toggle="modal" data-target="#memberModal">张三</a></td>
+		          <td>2016-05-21</td>
+		          <td>已认证</td>
+		          <td><span class="orange">未</span>认证</td>
+		          <td>已认证</td>
+		          <td>	
+		          		<div class="dropdown">
+		          			<a href="#"  class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">认证会员
+		          			<span class="caret"></span>
+		          			</a>
+		          			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		          				<li><a href="#">游客
+		          						<span class="glyphicon glyphicon-ok pull-right small"></span>
+		          					</a>
+		          				</li>
+		          				<li><a href="#">普通会员</a></li>
+		          				<li><a href="#">认证会员</a></li>
+		          			</ul>
+		          		</div>
+		          		
+		           </td>
+		        </tr>
+		        <tr>
+		          <td >张三</td>
+		          <td>2016-05-21</td>
+		          <td>已认证</td>
+		          <td>已认证</td>
+		          <td><span class="orange">未</span>认证</td>
+		          <td><a href="#">普通会员</a></td>
+		        </tr>
+		        <tr>
+		          <td >张三</td>
+		          <td>2016-05-21</td>
+		          <td><span class="orange">未</span>认证</td>
+		          <td>已认证</td>
+		          <td>已认证</td>
+		          <td><a href="#">游客</a></td>
+		        </tr>
+		      </tbody>
+		    </table>
+		</div>
+		<nav class="pull-right">
+	      <ul class="pagination">
+	        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+	        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">2</a></li>
+	        <li><a href="#">3</a></li>
+	        <li><a href="#">4</a></li>
+	        <li><a href="#">5</a></li>
+	        <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+	     </ul>
+	   </nav>
+<!-- 	   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#memberModal">
+	    Launch demo modal
+	  </button> -->
+
+
+
+
+
+	  	<div id="memberModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" >
+	    	<div class="modal-dialog" role="document">
+	      		<div class="modal-content">
+	        		<div class="modal-header">
+	          			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			  			<div class="member-modal-header">
+			  				<img src="/images/avatar.png" alt="" class="img-circle">
+			  				<p>张三</p>
+			  				<p class="label-tag">认证会员</p>
+			  				<ul id="modal-personal-info" class="nav nav-tabs" role="tablist">
+						      	<li role="presentation" class="active"><a href="#baseinfo" id="baseinfo-tab" role="tab" data-toggle="tab" aria-controls="base-info" aria-expanded="true">基本信息</a></li>
+						      	<li role="presentation" class=""><a href="#proinfo" role="tab" id="proinfo-tab" data-toggle="tab" aria-controls="pro-info" aria-expanded="false">专业信息</a></li>
+						      	<li role="presentation" class=""><a href="#presonllib" role="tab" id="presonllib-tab" data-toggle="tab" aria-controls="info3" aria-expanded="false">个人资质</a></li>
+						      	<li role="presentation" class=""><a href="#trueidentity" role="tab" id="trueidentity-tab" data-toggle="tab" aria-controls="trueidentity" aria-expanded="false">真实身份</a></li>
+						    </ul>
+			  			</div>
+	        		</div>
+			        <div class="modal-body">
+			          	<div class="container-fluid">
+			            	<div class="row">
+			              			<div id="modal-personal-info-tabs" class="tab-content small">
+				      					<div role="tabpanel" class="tab-pane  active in mt-15" id="baseinfo" aria-labelledby="baseinfo-tab">
+				      					 	 <form class="form-horizontal">
+												 <div class="form-group">
+												    <label for="inputPassword3 " class="col-sm-2 control-label pt-0">邮箱</label>
+												    <div class="col-sm-4">
+												        <span>1014444568@qq.com</span>
+												    </div>
+												    
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">用户ID</label>
+												    <div class="col-sm-4">
+												      <span>66656610</span>
+												    </div>
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">手机</label>
+												    <div class="col-sm-4">
+												      <span>1391381561</span>
+												    </div>
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">性别</label>
+												    <div class="col-sm-4">
+												      <span>男</span>
+												    </div>
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">QQ</label>
+												    <div class="col-sm-4">
+												      <span>10123156</span>
+												    </div>
+												 </div>
+												  <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">微信</label>
+												    <div class="col-sm-4">
+												      <span>10123156</span>
+												    </div>
+												 </div>
+												  <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">个性微博</label>
+												    <div class="col-sm-4">
+												      <span>www.weibo.com</span>
+												    </div>
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">个性标签</label>
+												    <div class="col-sm-4">
+												      <span class="label label-primary">Primary</span>
+												      <span class="label label-primary">Primary</span>
+												    </div>
+												</div>
+												<div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">学校</label>
+												    <div class="col-sm-4">
+												      <span>常州江苏理工</span>
+												    </div>
+												</div>
+												<div class="form-group">
+												    <label for="inputPassword3" class="col-sm-2 control-label pt-0">学历</label>
+												    <div class="col-sm-4">
+												      <span>本科</span>
+												    
+												    </div>
+												</div>
+											</form>
+				      					</div>
+				      					<div role="tabpanel" class="tab-pane  mt-15" id="proinfo" aria-labelledby="proinfo-tab">
+				      					 <div class="table-responsive">
+		                        			<table class="table table-prof-info">
+										      <thead>
+										        <tr>
+										          <th>行业/专业</th>
+										          <th>公司名称</th>
+										          <th>职业</th>
+										          <th>职称</th>
+										        </tr>
+										      </thead>
+										      <tbody>
+										        <tr>
+										          <td>1</td>
+										          <td>Mark</td>
+										          <td>Otto</td>
+										          <td>@mdo</td>
+										        </tr>
+										        
+										      </tbody>
+					    					</table>
+		                        		</div>
+				      					</div>
+				      			
+				      				
+				      					<div role="tabpanel" class="tab-pane  mt-15" id="presonllib" aria-labelledby="presonllib-tab">
+					      					
+					      						<table class="table ">
+											      <thead>
+											        <tr>
+											          <th>姓名</th>
+											          <th>证书类型</th>
+											          <th>证书名称</th>
+											          <th>证书照片</th>
+											        </tr>
+											      </thead>
+											      <tbody>
+											        <tr>
+											          <td>张三</td>
+											          <td>注册会计师</td>
+											          <td>注册会计师资格证</td>
+											          <td>
+
+											          	<a href="#"><i class="glyphicon glyphicon-search" id="showImg0"></i></a>
+											          	<div class="img-show-wrap">
+											          		<img src="/images/img01.jpg" alt="" class="img-responsive img-thumbnail">
+											          	</div>
+											          	
+											          </td>
+											        </tr>
+											        <tr>
+											          <td>张一</td>
+											          <td>注册会计师</td>
+											          <td>注册会计师资格证</td>
+											          <td>
+											          </td>
+											        </tr>
+											      </tbody>
+						    					</table>
+					      				
+				      					</div>
+				      			
+				      				
+				      					<div role="tabpanel" class="tab-pane  mt-15" id="trueidentity" aria-labelledby="trueidentity-tab">
+				      						 <form class="form-horizontal">
+												 <div class="form-group">
+												    <label for="inputPassword3 " class="col-sm-3 control-label pt-0">个人姓名</label>
+												    <div class="col-sm-4">
+												        <span>张珊</span>
+												    </div>
+												    
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-3 control-label pt-0">籍贯</label>
+												    <div class="col-sm-2">
+												      <span>江苏</span>
+												      <span>常州</span>
+												    </div>
+												     
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-3 control-label pt-0">所在地</label>
+												    <div class="col-sm-2">
+												      <span>江苏</span>
+												      <span>常州</span>
+												    </div>
+												     
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-3 control-label pt-0">身份证号码</label>
+												    <div class="col-sm-4">
+												      <span>320482199112120501</span>
+												    </div>
+												 </div>
+												 <div class="form-group">
+												    <label for="inputPassword3" class="col-sm-3 control-label pt-0">身份证正反照</label>
+												    <div class="col-sm-4">
+												       <img src="/images/img01.jpg" alt="" class="img-responsive">
+												        <img src="/images/img02.jpg" alt="" class="img-responsive mt-15">
+												    </div>
+												 </div>
+											</form>
+				      					</div>
+				      				</div>
+			           		</div>
+			            </div>
+			        </div>
+			     </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+	</div>
+</div>
+

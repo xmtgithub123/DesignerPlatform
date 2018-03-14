@@ -1,0 +1,54 @@
+@import 'config';
+.form-bg{
+	background:url(/images/login_bg1.jpg);
+	background-size:cover;
+}
+.logo-bg-wrap{
+	form {
+		background:white;
+		margin-top: 100px;
+		border-radius:3px;
+		box-shadow: 0 0 10px rgba(255,255,255,0.5);
+		.form-title-wrap {
+			padding:15px 0;
+			border-bottom:1px solid $gray-line;
+			margin-bottom: 15px;
+			.form-title {
+				border-left:5px solid $blue-01;
+				font-size: $medium;
+				padding-left:10px;
+				display: inline-block;
+			}
+			ul#passwordTabs {
+				margin-left: 30px;
+				display: inline-block;
+				li {
+					margin-bottom: -20px;
+					a{
+						font-size: $small;
+						padding:5px 10px;
+						color: $gray-dark;
+						
+					}
+				}
+				li.active {
+					a{
+						background:$blue-01;
+						color:white;
+					}
+				}
+			}
+		}
+		.form-control {
+			height: 30px;
+			font-size: $small;
+		}
+		.form-other {
+			padding:10px 20px;
+			width: 200px;
+			margin:0 auto;
+			border-top:1px solid $gray-line;
+			margin-bottom: 30px;
+		}
+	}
+}

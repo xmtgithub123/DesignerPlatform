@@ -1,0 +1,146 @@
+@import 'config';
+
+.usercenter-info-wrap {
+	margin-top:20px;
+	.user-left-wrap {
+		@extend .white-bg-border-wrap;
+		.user-info-header {
+			.avatar-wrap{
+				padding:20px 10px;
+				text-align:center;
+				img {
+					margin:0 auto;
+					width:75px;
+					height:75px;
+					margin-bottom: 10px;
+					border:1px solid $gray-line;
+				}
+			}
+			.user-certificate {
+				text-align:center;
+				span {
+					font-size: $small;
+					color:$gray-dark;
+					margin:0 5px;
+					
+					
+				}
+			}
+		}
+		.user-info-body {
+		    padding: 10px;
+		    border-top: 1px solid #dbdbdb;
+		    margin: 20px 0;
+		    font-size: 12px;
+		}
+	}
+	.info-personal {
+		margin-top:0;
+	}
+
+	.form-group {
+		font-size: $small;
+	
+	}
+	table {
+		font-size: $small;
+		border:1px solid $gray-line;
+		background: #fdfdfd;
+	    td,th {
+	    	text-align: center;
+	    }
+	    td {
+	    	position: relative;
+
+	    	.img-show-wrap {
+	    		position:absolute;
+	    		z-index: 1;
+	    		img {
+	    			display: none;
+	    		}
+	    	}
+	    }
+	}
+}
+table.table-prof-info {
+		font-size: $small;
+		border:1px solid $gray-line;
+		background: #fdfdfd;
+	    td,th {
+	    	text-align: center;
+	    }
+	    td {
+	    	position: relative;
+
+	    	.img-show-wrap {
+	    		position:absolute;
+	    		z-index: 1;
+	    		img {
+	    			display: none;
+	    		}
+	    	}
+	    }
+	}
+
+
+//通知
+.notice-center-wrap {
+	min-height:600px;
+	max-height:600px;
+	overflow-y:auto;
+	padding:15px;
+}
+
+ul.notice-list {
+	max-height:480px;
+	overflow-y:auto;
+	li {
+		border-bottom:1px solid $gray-line;
+		padding:20px 0;
+
+		&:last-child {
+			border-bottom:0;
+		}
+
+		.media {
+			.media-left {
+				.circle-tag-wrap {
+					width: 45px;
+					height:45px;
+					border-radius:100%;
+					line-height: 50px;
+					text-align: center;
+					color:white;
+					font-size:24px;
+				}
+				.bluebg {
+					background:$blue;
+				}
+				.graybg {
+					background:$gray-line;
+				}
+			}
+		}
+	}
+
+}
+
+ul.messages-bank {
+	li {
+		.media-body {
+			border-bottom:1px solid $gray-line;
+			padding:15px 0;
+		}
+		&:last-child .media-body {
+			border-bottom:0;
+		}
+	}
+	
+}
+.notice-footer {
+	position:absolute;
+	bottom:20px;
+	right:50px;
+	color:$gray-dark;
+	font-size:$small;
+}

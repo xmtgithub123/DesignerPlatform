@@ -1,0 +1,1176 @@
+@import 'config';
+
+body {
+	background:$gray-bg;
+}
+
+
+header {
+	height:30px;
+	background:$blue;
+	line-height:30px;
+	color:white;
+	position:relative;
+	.header-right {
+		ul.header-ul-list {
+			li {
+				float:left;
+				padding:0 10px;
+				a{
+					color:white;
+				}
+				.badge {
+					background:red;
+					position: absolute;
+					top:1px;
+					left:16px;
+					padding:2px 5px
+
+				}
+			}
+		}
+	}
+    .header-wrap {
+    	position:relative;
+    	.user-info {
+			display: none;
+			width:220px;
+			background:white;
+			// border:1px solid $gray-dark;
+			box-shadow:0 0 10px $gray-line;
+			position:absolute;
+			right:0;
+			margin-top:30px;
+			border-radius:10px;
+			z-index:3;
+			.user-info-header {
+				position: relative;
+				height: 140px;
+				overflow: hidden;
+				text-align:center;
+				// padding:20px 0;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				img.blur {
+					width: 100%;
+					height:100%;
+				}
+				.user-avatar {
+					position:absolute;
+					top:0;
+					right:0;
+					bottom:0;
+					left:0;
+					margin:40px auto;
+					width: 60px;
+					height:60px;
+				}
+			}
+			.user-info-body {
+				color: $gray-dark;
+				.form-group {
+					margin-bottom: 0;
+					width: 100%;
+					margin: 0;
+
+					.control-label {
+						padding:0;
+						text-align: right;
+						font-size: 12px;
+					}
+				}
+				.user-info-list {
+					margin-top:20px;
+					margin-bottom: 0;
+					li {
+						border-top:1px solid $gray-line;
+						text-align: center;
+						a{
+							display: block;
+							color: $gray-dark;
+						}
+					}
+					
+				}
+			}
+		}
+    }
+	
+}
+
+footer {
+	background:$gray-footer-bg;
+	min-height:50px;
+	line-height:50px;
+	.footer-left {
+		span {
+			color:$gray-dark;
+		}
+	}
+	ul.footer-ul-list {
+		li {
+			float:left;
+			a{
+				color:$blue;
+				padding:0 10px;
+			}
+		}
+	}
+}
+
+nav.nav-bar {
+	background:white;
+	padding:20px 0 0 0;
+	.nav-search-box {
+		position: relative;
+		input[type='text'] {
+			border-radius:30px;
+			padding: 6px 39px 6px 12px;
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+		i {
+			position:absolute;
+			right:15px;
+			top:0;
+			bottom: 0;
+			line-height: 34px;
+			font-size: large;
+			color:$gray-dark;
+		}
+	}
+	.navbar {
+		min-height: auto;
+		margin-bottom: 0;
+		.navbar-toggle {
+			border:1px solid $blue;
+			margin: 10px 0;
+			padding:5px 6px;
+			.icon-bar {
+				background:$blue;
+			}
+		}
+		.navbar-brand {
+			padding:0;
+			img {
+				width: 200px;
+			}
+		}
+		ul.nav.navbar-nav {
+			li {
+				margin:0 5px;
+				border-bottom:5px solid transparent;
+				a{
+					color:$dark;
+					padding: 10px 15px 15px 15px;
+					background:none;
+					i {
+						font-size: large;
+						margin-right:5px;
+					}
+				}
+				&.active {
+					border-bottom:5px solid $blue;
+				}
+			}
+		}
+	}
+}
+
+
+
+//首页 统计信息
+.platform-info-wrap {
+	
+	.platform-info-count {
+		padding:15px;
+		font-size: medium;
+		@extend .white-bg-border-wrap;
+
+	}
+
+	.media {
+		@extend .white-bg-border-wrap;
+		padding:15px 10px;
+		.media-body {
+			h4 {
+				font-size: 14px;
+			}
+			span {
+				font-size: small;
+				color:$gray-dark;
+				display: block;
+				height: 55px;
+				overflow: hidden;
+			}
+		}
+	}
+	.website-info-wrap {
+		@extend .white-bg-border-wrap;
+		border-radius:2px;
+		padding:10px;
+		min-height: 179px;
+		.website-info-line {
+			padding:5px 0;
+			border-bottom:1px solid $gray-line;
+			.header-border-left {
+				min-width:300px;
+				border-left:3px solid $orange;
+				padding:5px 10px;
+
+
+				h5 {
+					margin:0;
+				}
+			}
+		}
+		ul.website-info-list {
+			width: 100%;
+			li {
+				width:100%;
+				@extend .text-overflow;
+				margin-top:8px;
+				a{
+					font-size: small;
+					color:$gray-dark;
+					&:hover {
+						color:black;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+//项目招募
+.project-recruit,.project-collect,.project-join,.info-personal,.asset-manage-right-wrap {
+	@extend .white-bg-border-wrap;
+	// min-height:500px;
+	margin-top:15px;
+	.border-right {
+		min-height: 500px;
+	}
+	// padding:15px;
+	// min-height: 500px;
+	.header-border-left {
+		display:inline-block;
+	}
+     ul.nav-tabs{
+     	display: inline-block;
+     	margin-bottom: -13px;
+     }
+     .img-fit-box {
+     	position: relative;
+     	overflow: hidden;
+     	
+     	transform: scale(1);
+     	img {
+     		height:170px;
+     		width:100%;
+     		object-fit: cover;
+     		transition: all 2s;
+     	}
+     	.img-mask {
+		    padding: 5px 10px;
+		    background: rgba(0,0,0,.4);
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    width: 100%;
+		    p {
+		    	color:white;
+				margin-bottom: 0;
+				margin-left: 10px;
+				width: 100%;
+				@extend .text-overflow;
+				&:after {
+				    content: '';
+				    width: 10px;
+				    height: 10px;
+				    background: red;
+				    border-radius: 100%;
+				    position: absolute;
+				    left: 5px;
+				    top: 10px;
+				}
+		    }
+		    span {
+		    	color:white;
+		    	font-size: $small;
+				color:$gray-line;
+				margin-left: 10px;
+				display: block;
+				@extend .text-overflow;
+		    }
+     	}
+
+     	&:hover img{
+			transform: scale(1.1);
+     	}
+
+     }
+}
+
+// 用户中心 资产管理
+.asset-manage-right-wrap {
+	background:white;
+	padding:10px;
+	min-height:500px;
+}
+.website-usercenter-asset,.panel-wrap {
+	.panel {
+		margin-bottom: 0;
+		border-radius:0;
+	}
+	.panel-heading {
+		padding:5px 10px;
+		border-radius:0;
+		position:relative;
+		background:#daeafd;
+		span{
+			font-size: $normal;
+			line-height: 20px;
+		}
+		.panel-title {
+			position:absolute;
+			left: 50px;
+			line-height: 30px;
+			font-weight:600;
+		}
+	}
+	.panel-body {
+		padding:0;
+		li {
+			border-bottom:1px solid $gray-line;
+			&:last-child {
+				border-bottom:0;
+			}
+			&:hover {
+				background:$gray-line;
+			}
+		}
+		li.active {
+			// border-bottom:1px solid $gray-line;
+			color:$dark;
+		}
+		a{
+			color:$gray-dark;
+			display: block;
+			padding:5px;
+		}
+	}
+}
+
+
+//会员管理
+.website-member-wrap {
+	@extend .white-bg-border-wrap ;
+	padding:30px;
+	margin-top: 15px;
+	table {
+		font-size: $normal;
+		color:$gray-dark;
+		ul.dropdown-menu {
+			li {
+				&:hover a {
+					color:$blue;
+				}
+			}
+		}
+	}
+}
+#memberModal {
+
+	.modal-header {
+		padding:0;
+		.member-modal-header {
+			height: 200px;
+			background:$orange;
+			text-align: center;
+			color:white;
+			padding-top:20px;
+			.label-tag {
+				width:80px;
+				background:rgba(0,0,0,0.5);
+				border-radius:5px;
+				margin:0 auto;
+			}
+			#modal-personal-info {
+				margin-top: 13px;
+				li {
+					width:24.75%;
+					background:rgba(0,0,0,0.6);
+					margin:0 1px;
+					a{
+						color:white;
+						&:hover {
+							background:transparent;
+							border:1px solid transparent;
+						}
+					}
+					&:first-child {
+						margin-left:0;
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+
+				}
+				li.active  a{
+					background:transparent;
+					border:1px solid transparent;
+					&:after {
+					    content: '';
+					    display:block;
+					    width:0;
+					    height:0;
+					    border-width:10px;
+					    border-style:solid;
+					    border-color: transparent transparent white;
+					    position:absolute; 
+					    bottom:-2px;
+					    left:0;
+					    right:0;
+					    margin:0 auto;
+					    overflow:hidden; 
+
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+
+// 我的
+.add-project {
+	color:#0084db;
+	font-weight:600;
+	cursor:pointer;
+	i{
+		margin-top: 5px;
+	}
+	
+}
+.media-right-wrap {
+	p.pull-left{
+		font-size: $normal;
+		font-weight:600;
+		a{
+			color:black;
+			@extend .transition;
+			&:hover {
+				color: $gray-dark;
+			}
+		}
+	}
+	.pull-right {
+		span {
+			// font-size: $small;
+		}
+	}
+	ul {
+		
+		li {
+			margin-top: 10px;
+			padding:2px;
+			border:1px solid $gray-line;
+			border-left:8px solid red;
+		
+			line-height: 35px;
+			p {
+				margin: 0;
+				
+			}
+			button {
+					margin:4px;
+				}
+
+		}
+		li.green-b {
+			border-left:8px solid green;
+		}
+		li.orange-b {
+			border-left:8px solid $orange;
+		}
+	}
+
+	.checkbox input[type=checkbox] {
+		margin-left:-15px;
+	}
+	input[type=checkbox] {
+		margin:8px 0 0;
+	}
+}
+#addprojectModal ,#projectSetModal{
+	margin-top:30px;
+	.modal-header {
+		border-bottom:0;
+		padding:0;
+		position:relative;
+		height: 200px;
+		overflow: hidden;
+		.close {
+			margin-top: -2px;
+		    position: absolute;
+		    right: 10px;
+		    top: 10px;
+		    color: white;
+		    font-size: 30px;
+		    z-index: 1;
+		}
+		.black-mask {
+			background: rgba(0,0,0,.4);
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    top:0;
+		    width: 100%;
+		    z-index: 0;
+		    .mask-content {
+		    	margin-top: 60px;
+			    text-align: Center;
+			    color: white;
+			    
+			    @extend .text-overflow;
+			    p{
+			    	width: 90px;
+			    	background: rgba(0,0,0,.4);
+			    	border-radius:10px;
+			    	margin:0 auto;
+			    	margin-top: 20px;
+			    }
+		    }
+		}
+	}
+	.modal-body {
+		padding:0;
+		.nav-tabs {
+			
+			li.active {
+				a {
+					border:0;
+					text-align: center;
+					background:white;
+					color:$gray-dark;
+
+				}
+			}
+			li {
+				width: 50%;
+				a{
+					border:0;
+					background:$gray-bg;
+					text-align: center;
+					color:$gray-dark;
+				}
+			}
+		}
+		.select-no-border {
+			display: inline-block;
+			width: auto;
+			padding:0;
+			border:0;
+			box-shadow:none;
+			color:$gray-dark;
+
+		}
+	}
+	.dropdown-menu-wrap {
+		position:relative;
+		ul.dropdown-menu {
+			li {
+				a{
+					color: $gray-dark;
+				}
+			}
+		}
+	}
+}
+// 我的-项目详情页ul列表
+.detail-ul-02 {
+	li {
+		float:left;
+        border-left:1px solid $gray-dark;
+		
+		a{
+			color: $gray-dark;
+			font-size:$small;
+			padding:0 10px;
+			font-weight: 600;
+			
+
+		}
+		&:first-child {
+			border-left:0;
+		}
+	}
+	.dropdown-menu {
+		padding:10px;
+			li {
+				border-left:0 !important;
+				width:100%;
+
+				border-bottom:1px solid $gray-line;
+				&:last-child {
+					border-bottom:0;
+				}
+				a{
+					padding:10px;
+					font-weight: normal;
+				}
+			}
+		
+	}
+}
+// 我的-项目详情 任务栏
+.detail-task-row{
+	padding: 30px 0;
+	.task-group {
+		ul {
+			border-top:1px solid $gray-line;
+			margin:15px 0;
+			li {
+				padding:8px;
+				a {
+					color:$gray-dark;
+					display: block;
+
+				}
+				&:hover {
+					background:$gray-line;
+					border-radius:3px;
+				}
+			}
+		}
+	}
+}
+
+// 我的-项目详情 - 新建任务
+
+.full-height {
+		display: table;
+		width: 100%;
+		position:relative;
+		margin-left: 0;
+		min-height: 500px;
+
+	}
+	.sidebar.sidebar-right {
+		z-index: -1;
+            opacity: 0;
+		transform: translateX(100%);
+
+		a {
+			color:$gray-dark;
+		}
+		
+	}
+	.sidebar.sidebar-right.sidebar-open {
+		    transform: translateX(0);
+		    z-index: 1;
+            opacity: 1;
+		 
+
+
+	}
+.silde-right-bar {
+	overflow-x:hidden;
+	position:relative;
+	
+}
+.tab-task-wrap {
+    .add-task-event {
+    	cursor: pointer;
+    	@extend .transition;
+
+		&:hover {
+			background:#e8e8e8;
+		}
+    }
+	.add-task-box {
+		
+		border:1px solid $gray-line;
+		background:$gray-bg;
+		
+		border-radius:3px;
+		
+		color:$gray-dark;
+		box-shadow: 0 2px 2px $gray-line;
+		.task-title {
+			padding:5px;
+		}
+		.task-body {
+			border-top:1px solid $gray-line;
+			
+			.task-list {
+				padding:10px;
+				margin-bottom: 8px;
+				border-top:1px solid $gray-line;
+				border-bottom:1px solid $gray-line;
+				.checkbox {
+					margin:0;
+				}
+				img.img-circle {
+					width: 30px;
+					display: inline;
+					margin-right: 5px;
+				}
+			}
+		}
+		.task-save {
+			display: none;
+		}
+	}
+	.task-pannel {
+		display: none;
+	}
+}
+
+//我的 - 项目详情 -添加任务模态框
+#addTaskModal,#cjshModal,#havetoUndertakeModal ,#TaskAcceptanceModal{
+	.modal-header{
+		background:$orange;
+		color:white;
+		padding:5px 15px;
+        
+	}
+
+	.modal-body {
+		ul.task-info-list {
+			border:1px solid $gray-line;
+			
+            display: inline-block;
+            width:100%;
+			li {
+				float:left;
+				width: 25%;
+				border-right:1px solid $gray-line;
+				padding:10px;
+				color:$gray-dark;
+				min-height: 80px;
+				text-align: center;
+				p {
+					font-size: $medium;
+				}
+				img.img-circle {
+					width: 30px;
+					display: inline;
+					margin-right: 10px;
+				}
+				&:last-child {
+					border-right:0;
+				}
+			}
+		}
+		.task-require-wrap {
+			border:1px solid $gray-line;
+			color:$gray-dark;
+			max-height: 150px;
+			padding:15px;
+			overflow-y:auto;
+			p{
+				text-indent: 20px;
+			}
+		}
+		.task-uploak-wrap {
+			border:1px solid $gray-line;
+			li {
+				padding:6px;
+				color:$gray-dark;
+				border-bottom:1px solid $gray-line;
+				&:last-child {
+					border-bottom:0;
+				}
+			}
+		}
+	}
+	.modal-footer {
+		background:$gray-bg;
+	}
+}
+#calendarStrokeModal {
+
+	.task-info-list {
+		background:white;
+		border:1px solid $gray-line;
+		margin-top: 15px;
+		margin-bottom: 0;
+        display: inline-block;
+        width:100%;
+		li {
+			float:left;
+			width: 40%;
+			border-right:1px solid $gray-line;
+			padding:10px;
+			color:$gray-dark;
+			min-height:72px;
+
+		
+			p {
+				font-size: $small;
+				color:$gray-dark;
+			}
+			img.img-circle {
+				width: 30px;
+				display: inline;
+				margin-right: 10px;
+			}
+			&:last-child {
+				border-right:0;
+				width:20%;
+			}
+			.checkbox {
+				margin:0;
+				input[type="checkbox"] {
+					margin-left:-15px;
+				}
+			}
+		}
+	}
+	.task-info-list-2 {
+		li {
+			width: 40%;
+			&:last-child {
+				width: 60%;
+			}
+		}
+		.dropdown {
+			display: inline-block;
+			ul {
+				
+				li {
+					width: 100%;
+					min-height:auto;
+					padding:0;
+					border-right:0;
+					font-size:small;
+					a{
+						color:$gray-dark;
+					}
+				}
+			}
+		}
+	}
+	.task-info-list-3 {
+		li {
+			width:100%;
+			
+		}
+	}
+
+}
+
+
+// 项目承接
+#undertakeModal{
+	.modal-header{
+		border-bottom:0;
+	}
+	.modal-body {
+		height: 400px;
+		
+		overflow-y:auto;
+		article{
+			li p{
+				margin:0 0 5px;
+				font-size: $small;
+				text-indent:25px;
+			}
+		}
+	}
+	.modal-footer {
+		border-top:0;
+	}
+}
+#havetoUndertakeModal {
+	ul.task-chat-list {
+		max-height: 300px;
+		overflow-y:auto;
+	}
+}
+
+
+
+
+// 右侧侧边栏样式
+.menu-project-list {
+	li {
+		padding:10px 0;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+			
+		}
+
+		border-bottom:1px solid #f1f1f1 ;
+		&:last-child {
+			border-bottom:0;
+		}
+
+	}
+}
+
+
+// 日历
+.leftsiderbar-top-box {
+	height:215px;
+	width:100%;
+	margin-bottom:30px;
+
+	ul {
+		margin-top: 10px;
+		height:190px;
+		width:100%;
+		overflow-y:auto;
+		
+		li {
+			width:90%;
+			margin-bottom:5px;
+			@extend .text-overflow;
+
+			a{
+				font-size: $small;
+				color:$gray-dark;
+				width: 100%;
+			
+				
+			}
+			img {
+				height: 20px;
+				width:25px;
+
+			}
+		}
+	}
+}
+//知识
+.info-knowledge {
+	min-height:500px;
+}
+.panel-wrap .pannel-ul-body li:hover, 
+.website-usercenter-asset .pannel-ul-body li:hover {
+	background:none !important;
+}
+.pannel-ul-body {
+	li {
+		padding-left:20px;
+		&:hover {
+			background:none;
+		}
+		a{
+			font-size: $small;
+			float:left;
+			&:hover {
+				color:dark !important;
+			}
+		}
+	}
+}
+.breadcrumb-ol-wrap {
+	margin-bottom:0;
+	background:none;
+	display:inline-block;
+	font-size:$small;
+}
+//图库
+.gallery-img-wrap {
+    text-align: center;
+    p {
+    	margin-top: 5px;
+    	color:$gray-dark;
+    }
+    .col-sm-6.col-md-3 {
+    	margin-bottom: 30px;
+    }
+	.gallery-box {
+		width:100%;
+		height: 133px;
+		overflow: hidden;
+		text-align: center;
+	
+		img {
+			width:100%;
+			object-fit: fill;
+		}
+	}
+}
+
+
+
+
+//个人中心
+.personal-center-wrap {
+	min-height:500px;
+	.personal-center-content {
+		padding:30px;
+	.control-label {
+			padding-top:0;
+		}
+	}
+}
+.left-white-menu {
+	background:white;
+	min-height:500px;
+	border:1px solid $gray-line;
+	padding:30px;
+	margin-top:15px;
+ 	.menu-list {
+ 		li {
+ 			margin-bottom: 15px;
+ 		}
+ 	}
+	
+		.well {
+			background:none;
+			padding:0;
+			margin-bottom: 0;
+			border:0;
+			box-shadow:none;
+			ul {
+
+				li {
+					margin-left: 40px;
+					margin-bottom: 0;
+					a{
+						color:$gray-dark;
+						font-size: $small;
+						&:hover {
+							color:$blue;
+						}
+					}
+				}
+			}
+		}
+	
+}
+
+
+@media screen and (min-width: 768px) {
+	.project-recruit {
+		.img-fit-box {
+			img {
+				min-height:170px !important;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.gallery-img-wrap {
+		.gallery-box{
+			height: auto !important;
+		}
+	}
+
+	//首页 tabs 样式
+	.project-recruit,
+	.project-collect,
+	.project-join,
+	.website-info-line{
+		ul.nav-tabs {
+			display: block;
+			margin-bottom:-5px;
+			li {
+				float:none;
+			}
+			li.active {
+				a{
+					border-bottom:0;
+					&:after {
+						background:none;
+						border-bottom:0;
+						border:0;
+					}
+				}
+			}
+		}
+	}
+    // 左边栏 min-height
+    .info-personal,.border-right {
+    	min-height: auto !important;
+    }
+
+	//字号
+	.medium {
+		font-size:$normal;
+	}
+	.normal ,span,p,a{
+		font-size: $small !important;
+	}
+
+
+}
+
+
+
+
+//2016-8-22首页修改
+
+.list_lh{ height:126px; overflow:hidden;}
+.list_lh ul li .col-md-6{
+	padding-left:50px !important;
+}
+.cases-show-left,.cases-show-right {
+	a {
+		color:#333;
+	}
+}
+.cases-show-right {
+	img {
+		height:164px;
+		width: 100%;
+		overflow: hidden;
+	}
+	a {
+		color:#6b6b6c;
+	}
+}
+#myVerticalCarousel {
+	 .carousel-inner {
+	  height: 100%;
+	}
+
+	 .item {
+	  -webkit-transition: 0.6s ease-in-out top;
+	     -moz-transition: 0.6s ease-in-out top;
+	      -ms-transition: 0.6s ease-in-out top;
+	       -o-transition: 0.6s ease-in-out top;
+	          transition: 0.6s ease-in-out top;
+	}
+
+	 .active {
+	  top: 0;
+	}
+
+	 .next {
+	  top: 100%;
+	}
+
+	 .prev {
+	  top: -100%;
+	}
+
+	 .next.left,
+	 .prev.right {
+	  top: 0;
+	}
+
+	 .active.left {
+	  top: -100%;
+	}
+
+	 .active.right {
+	  top: 100%;
+	}
+
+	 .item {
+	    left: 0;
+	}
+}

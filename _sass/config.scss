@@ -1,0 +1,442 @@
+$orange:rgb(255,121,0);
+$blue:#2a62ac;
+$blue-01:#02a8f4;
+
+$gray-bg:#f8f7f5;
+$gray-footer-bg:#e9ecf3;
+$gray-dark:#6b6d6c;
+$dark:#4a4a4a;
+$gray-line:#dbdbdb;
+$gray-01:#a2a2a2;
+
+$small:12px;
+$normal:14px;
+$medium:16px;
+$large:18px;
+body,html {
+	height:100%;
+	width:100%;
+}
+body{
+	font-family:"Microsoft YaHei","微软雅黑";
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	// margin-left: -webkit-calc(100vw - 100%);
+}
+ul li {list-style:none;}
+
+a:hover,a:link {text-decoration:none;}
+h1,h2,h3,h4,h5 {
+	font-weight:bold;
+}
+*{
+	padding:0;
+	margin:0;
+}
+.gray-bottom-border {
+	border-bottom:1px solid $gray-line;
+	padding:15px;
+	&:last-child {
+		border-bottom:0;
+	}
+}
+.gray-border{
+	border:1px solid $gray-line;
+}
+.border-bottom {
+	border-bottom:1px solid $gray-line;
+}
+.border-right {
+	border-right:1px solid $gray-line;
+	height:100%;
+}
+.border-left {
+	border-left:1px solid $gray-line;
+	
+}
+.border-radius  {
+	border-radius:3px;
+}
+.body-wrap {
+	position:relative;
+	min-height:100%;
+	height:auto !important;
+	margin:0 auto -50px;
+	padding-bottom:80px;
+}
+.img-list {
+	width:45px;
+	display:inline;
+	margin-right:10px;
+}
+.fl {
+	float:left;
+}
+
+.blur {
+	-webkit-filter: blur(6px); /* Chrome, Opera */
+    -moz-filter: blur(6px);
+    -ms-filter: blur(6px);   
+    filter: blur(6px);
+}
+footer {
+	position:relative;
+	margin:0 auto;
+}
+.center {
+	margin:0 auto;
+	text-align:center;
+}
+.text-left {
+	text-align:left !important;
+}
+.pl {
+	position:relative;
+}
+.h-b {
+	font-size:large;
+	font-weight:bold;
+}
+.close {
+	font-size: 30px;
+	color:white; 
+	opacity:.8;
+}
+.d-i {
+	display:inline;
+}
+.d-b {
+	display:block;
+}
+.text-overflow-width {
+	max-width: 62px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.orange {
+	color:$orange;
+}
+.blue {
+	color:$blue;
+}
+.blue-01 {
+	color:$blue-01;
+}
+.gray{
+	color:$gray-dark !important;
+}
+.red {
+	color:red !important;
+}
+.gray-01 {
+	color:#9c9c9c !important;
+}
+.mr-15 {
+	margin-right:15px;
+}
+.m-0 {
+	margin:0 !important;
+}
+.ml-0 {
+	margin-left:0 !important;
+}
+.ml-5 {
+	margin-left:5px;
+}
+.ml-10 {
+	margin-left:10px;
+}
+.ml-15 {
+	margin-left:15px;
+}
+.ml-20 {
+	margin-left:20px;
+}
+.mt-30 {
+	margin-top:30px;
+}
+.mt-15 {
+	margin-top:15px;
+}
+.mt-10 {
+	margin-top:10px;
+}
+.mb-0 {
+	margin-bottom:0 !important ;
+}
+.mb-30 {
+	margin-bottom:30px !important ;
+}
+.mb-15 {
+	margin-bottom:15px !important ;
+}
+.p-10 {
+	padding:10px;
+}
+.p-15 {
+	padding:15px;
+}
+.pr-15 {
+	padding-right:15px;
+}
+.pl-15 {
+	padding-left:15px;
+}
+.pl-30{
+	padding-left:30px;
+}
+.p-30 {
+	padding:30px;
+}
+.pt-10 {
+	padding-top:10px !important;
+}
+.pt-0 {
+	padding-top:0 !important;
+}
+.p-0 {
+	padding:0 !important;
+}
+.p-5 {
+	padding:5px !important;
+}
+.pb-0 {
+	padding-bottom:0 !important;
+}
+.pr-35 {
+	padding-right:35px;
+}
+.small {
+	font-size:$small;
+}
+.normal {
+	font-size:$normal;
+}
+.large {
+	font-size:$large;
+}
+.larger {
+	font-size:28px;
+}
+
+.text-overflow {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.white-bg-border-wrap{
+	background:white;
+	border:1px solid $gray-line;
+}
+.white-bg {
+	background:white;
+}
+.gray01-bg {
+	background:#f1f1f1;
+}
+.delete-line {
+	text-decoration: line-through;
+}
+.label-default {
+	background:#cecece;
+}
+.transition {
+	transition:all .4s;
+}
+// 左边橙色左边线
+.website-info-line {
+	padding:5px 15px;
+	border-bottom:1px solid $gray-line;
+	.header-border-left {
+		border-left:3px solid $orange;
+		padding:5px 10px;
+
+
+		h5 ,h4{
+			margin:0;
+		}
+	}
+	
+}
+.header-border-blue-left {
+		border-left:3px solid #5bc0de;
+		padding:5px 10px;
+
+
+		h5 ,h4{
+			margin:0;
+		}
+	}
+.nav-tabs {
+	border:none;
+	li {
+		a{
+			padding:10px;
+		}
+	}
+}
+
+//  右边橙色圈 tabs
+.nav-inline>li.active a{
+	&:after {
+		content: '';
+	    position: absolute;
+	    height: 10px;
+	    width: 10px;
+	    border: 2px solid $orange;
+	    border-radius: 100%;
+	    left: 0;
+	    bottom:0;
+	    right: 0;
+	    margin: 0 auto;
+	    z-index:2;
+	    margin-bottom: -6px;
+	    background: white;
+	}
+}
+.nav-inline>li.active>a, 
+.nav-inline>li.active>a:focus, 
+.nav-inline>li.active>a:hover {
+	border:1px solid white;
+	border-bottom:2px solid $orange;
+	color:$orange;
+  
+}
+
+.nav-inline{
+	li {
+		margin:0 10px;
+		a{
+			color:$dark;
+			&:hover {
+				background: none;
+				border:1px solid white;
+			}
+		}
+	}
+}
+
+// 进度条
+.progress {
+	height:10px;
+	margin-top:10px;
+}
+
+//分页
+.pagination>li>a {
+	color:$gray-dark;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover {
+	background:$orange;
+	border:1px solid $orange;
+
+}
+
+// 缎带标签
+.fancy {
+    margin-left: -10px;
+    width:30px;
+    position:relative;
+    margin-top: -2px;
+	&:after {
+		content: "";
+	    width: 0;
+	    height: 0;
+	    position: absolute;
+	    font-size: 0;
+	    line-height: 0;
+	    z-index: 5;
+	    border-width:15px;
+	    border-style:solid;
+	    border-color: transparent transparent transparent rgb(0,132,219);
+	    bottom: 0;
+	    top:1px;
+	    margin-left:30px;
+	    left: 0;
+		}
+		 h2 {    
+	    font-style: italyc;
+	    line-height: 1;
+	    color: white;
+	    margin: 0;
+	    position: relative;
+	    z-index: 6;
+	    &:after {
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    position: absolute;
+		    font-size: 0;
+		    line-height: 0;
+		    z-index: 5;
+		    border-top: 0 solid transparent;
+		    border-bottom: 10px solid transparent;
+		    bottom: -10px;
+		    border-right:10px solid rgb(0,103,170);
+		    left: 0;
+		}
+		.ribbon-center {
+		    display: block;
+		    text-align: center;
+		    font-size:$medium;
+		    padding: 5px 0;
+		    background-color: rgb(0,132,219);
+		}
+	}
+}
+
+
+textarea {
+box-shadow: none !important;
+border: 1px solid #555;
+
+border-radius: 3!important;
+font-size: 14px !important;
+height: 165px;
+margin-top: 0px;
+padding: 5px 10px;
+resize: none;
+}
+
+
+
+#CreateDiscussionModal {
+	.modal-header {
+		border-bottom:0;
+	}
+}
+
+#calendarStrokeModal {
+	.modal-content {
+		background-color:$gray-bg;
+		.modal-body {
+			.form-control {
+				border-radius: 0;
+				&:last-child {
+					border-top:0;
+				}
+			}
+		}
+	}
+}
+
+
+.fc-bg {
+	table {
+		tbody {
+			tr td.fc-future:hover {
+				background:$gray-bg;
+			}
+		}
+		
+	}
+}
+
